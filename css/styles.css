@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+    --headingFont: "Poppins", sans-serif;
+    --bodyFont: "Open Sans", sans-serif;
+}
+
+.attribution {
+    font-family: var(--bodyFont);
+    font-size: 11px;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.landing {
+    min-height: 100vh;
+    background-color: hsl(257, 40%, 49%);
+    background-image: url("/images/bg-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 2rem;
+}
+
+#logo {
+    width: 140px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 2.5rem 0;
+}
+
+.text {
+    color: white;
+    text-align: center;
+    order: 1;
+    padding: 2rem 0;
+}
+
+.text h1 {
+    font-family: var(--headingFont);
+    font-size: 1.5rem;
+}
+
+.text p {
+    font-family: var(--bodyFont);
+    margin: 1rem 0;
+    color: rgba(255, 255, 255, 0.80);
+}
+
+.button {
+    text-decoration: none;
+    color: hsl(257, 40%, 49%);
+    padding: .7rem 1rem;
+    margin-top: 1rem;
+    background-color: white;
+    border-radius: 2rem;
+    display: inline-block;
+    font-family: var(--bodyFont);
+    font-size: .8rem;
+    width: 60%;
+    box-shadow: 0 0 10px 0 rgb(80, 58, 138);
+    transition: .2s ease;
+}
+
+.button:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+
+.image img {
+    max-width: 100%;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    width: 35px;
+    height: 35px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin: 0 .4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.icon:hover {
+    border: 1px solid hsl(300, 69%, 71%);
+}
+
+.icon i {
+    color: white;
+    font-size: 1rem;
+}
+
+.icon:hover i {
+    color: hsl(300, 69%, 71%)
+}
+
+@media (min-width: 800px) {
+    .landing {
+        background-image: url("/images/bg-desktop.svg");
+        background-size: cover;
+        padding: 2rem 4rem;
+    }
+
+    #logo {
+        width: 180px;
+    }
+
+    .content {
+        grid-template-columns: 1.5fr 1fr;
+    }
+
+    .text {
+        text-align: left;
+        padding: 2rem;
+    }
+
+    .text h1 {
+        font-size: 2.2rem;
+    }
+
+    .button {
+        text-align: center;
+        font-size: 1rem;
+        width: 40%;
+    }
+
+    .image {
+        align-self: center;
+    }
+
+    .social-media {
+        justify-content: flex-end;
+    }
+
+    .icon {
+        margin: 0 .5rem;
+    }
+}
