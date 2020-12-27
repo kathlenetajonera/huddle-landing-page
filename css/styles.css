@@ -34,7 +34,7 @@
 .content {
     display: grid;
     grid-template-columns: 1fr;
-    padding: 2.5rem 0;
+    padding: 3.5rem 0 2.5rem 0;
 }
 
 .text {
